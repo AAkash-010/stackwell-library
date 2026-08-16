@@ -387,7 +387,12 @@ tbody tr:last-child td { border-bottom: none; }
 .stat-card .label { font-size: 0.85rem; color: var(--text-muted); }
 
 /* -------------------------------- 12. Footer -------------------------------- */
-.site-footer { background: var(--ink); color: var(--text-on-dark-muted); padding: 3rem 0 1.5rem; margin-top: 4rem; }
+.site-footer {
+  background: radial-gradient(circle at 90% 0%, rgba(169,124,52,0.14), transparent 50%), var(--ink);
+  color: var(--text-on-dark-muted);
+  padding: 3rem 0 1.5rem;
+  margin-top: 4rem;
+}
 .footer-grid { display: grid; gap: 2rem; margin-bottom: 2rem; }
 .footer-grid h4 { color: var(--text-on-dark); font-family: var(--font-body); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.9rem; }
 .footer-grid a { text-decoration: none; color: var(--text-on-dark-muted); display: block; padding: 0.3rem 0; transition: color 0.18s ease; }
