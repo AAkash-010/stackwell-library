@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Stackwell Library</title>
+  <meta name="description" content="Get in touch with Stackwell Library staff — ask a librarian, report an issue, or send feedback.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap nav-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">SL</span>
+        <span>Stackwell Library<span class="brand-tag">Est. community library system</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="about.html">About</a>
+        <a href="portal.html">Member Portal</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <div class="nav-cta"><a href="portal.html">Sign in</a></div>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-panel">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav id="mobile-panel" class="mobile-panel" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="about.html">About</a>
+      <a href="portal.html">Member Portal</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="contact-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">We'd like to hear from you</p>
+          <h1 id="contact-heading">Contact a librarian</h1>
+          <p class="lede">Questions about a hold, a fine, or a research request? Send a message and staff will follow up within two business days.</p>
+        </div>
+
+        <div class="grid" style="grid-template-columns: 1fr; gap: 2.5rem;">
+          <div class="form-panel">
+            <div id="form-status" class="form-status" aria-live="polite"></div>
+
+            <form id="contact-form" novalidate>
+              <div class="field">
+                <label for="cf-name">Full name <span class="required-mark">*</span></label>
+                <input type="text" id="cf-name" name="name" autocomplete="name" required aria-required="true" aria-describedby="name-error">
+                <span class="field-error" id="name-error" role="alert"></span>
+              </div>
+
+              <div class="field">
+                <label for="cf-email">Email address <span class="required-mark">*</span></label>
+                <input type="email" id="cf-email" name="email" autocomplete="email" required aria-required="true" aria-describedby="email-error">
+                <span class="field-error" id="email-error" role="alert"></span>
+              </div>
+
+              <div class="field">
+                <label for="cf-subject">Subject <span class="required-mark">*</span></label>
+                <select id="cf-subject" name="subject" required aria-required="true" aria-describedby="subject-error">
+                  <option value="">Choose a subject…</option>
+                  <option value="general">General enquiry</option>
+                  <option value="holds">Holds & renewals</option>
+                  <option value="fines">Fines & fees</option>
+                  <option value="research">Research assistance</option>
+                  <option value="feedback">Feedback / suggestion</option>
+                </select>
+                <span class="field-error" id="subject-error" role="alert"></span>
+              </div>
+
+              <div class="field">
+                <label for="cf-message">Message <span class="required-mark">*</span></label>
+                <textarea id="cf-message" name="message" required aria-required="true" aria-describedby="message-error"></textarea>
+                <p class="hint">At least 10 characters — the more detail, the faster we can help.</p>
+                <span class="field-error" id="message-error" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-outline-dark">Send message</button>
+              <p class="hint" style="margin-top: 1rem;">This is a static prototype — messages are validated in your browser and not transmitted anywhere.</p>
+            </form>
+          </div>
+
+          <div>
+            <h2 style="font-size: 1.2rem;">Other ways to reach us</h2>
+            <ul style="display: grid; gap: 0.9rem; margin-top: 1rem;">
+              <li><strong>Front desk:</strong> (03) 5550 1873</li>
+              <li><strong>Reference desk:</strong> reference@stackwell-library.example</li>
+              <li><strong>Address:</strong> 22 Elm Street, Stackwell</li>
+              <li><strong>Hours:</strong> Mon–Fri 9am–8pm · Sat 10am–5pm · Sun 12pm–5pm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h4>Stackwell Library</h4>
+          <p style="max-width: 32ch; color: var(--text-on-dark-muted);">A community library system for readers, researchers, and anyone who needs a quiet table for an afternoon.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="catalog.html">Catalog</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+        <div>
+          <h4>Account</h4>
+          <a href="portal.html">Member portal</a>
+          <a href="contact.html">Contact us</a>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <a href="about.html">Hours & location</a>
+          <a href="contact.html">Ask a librarian</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Stackwell Library. A static prototype built for ICT726 Assignment 3.</span>
+        <span>All book records are fictional sample data.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

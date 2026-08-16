@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Portal — Stackwell Library</title>
+  <meta name="description" content="Design prototype of the Stackwell Library member portal dashboard — loans, holds, and account summary.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap nav-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">SL</span>
+        <span>Stackwell Library<span class="brand-tag">Est. community library system</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="about.html">About</a>
+        <a href="portal.html" aria-current="page">Member Portal</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta"><a href="portal.html">Sign in</a></div>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-panel">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav id="mobile-panel" class="mobile-panel" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="about.html">About</a>
+      <a href="portal.html" aria-current="page">Member Portal</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="portal-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Design prototype — sample account data</p>
+          <h1 id="portal-heading">Welcome back, Jordan</h1>
+          <p class="lede">This is a static prototype of the member dashboard. In a live system this data would come from a member's real account after signing in; here it's hardcoded to demonstrate the layout.</p>
+        </div>
+
+        <div class="stat-strip">
+          <div class="stat-card"><span class="num">3</span><span class="label">Items on loan</span></div>
+          <div class="stat-card"><span class="num">1</span><span class="label">Hold ready for pickup</span></div>
+          <div class="stat-card"><span class="num">$0.00</span><span class="label">Fines owing</span></div>
+          <div class="stat-card"><span class="num">2026</span><span class="label">Member since</span></div>
+        </div>
+
+        <h2>Current loans</h2>
+        <div class="table-wrap" style="margin-bottom: 2.5rem;">
+          <table>
+            <caption class="visually-hidden">Books currently on loan to this member</caption>
+            <thead>
+              <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Due date</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>The Long Ferry</td>
+                <td>Mira Klay</td>
+                <td>18 Aug 2026</td>
+                <td><span class="tag">On time</span></td>
+              </tr>
+              <tr>
+                <td>Field Notes on Rain</td>
+                <td>Priya Reyes</td>
+                <td>21 Aug 2026</td>
+                <td><span class="tag">On time</span></td>
+              </tr>
+              <tr>
+                <td>A History of Coastal Trade</td>
+                <td>D. Okonkwo-Reid</td>
+                <td>12 Aug 2026</td>
+                <td><span class="tag tag-brass">Due tomorrow</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Holds</h2>
+        <div class="table-wrap" style="margin-bottom: 2.5rem;">
+          <table>
+            <caption class="visually-hidden">Books currently on hold for this member</caption>
+            <thead>
+              <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>The Glass Orchard</td>
+                <td>Hana Novak</td>
+                <td><span class="tag">Ready for pickup</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Account details</h2>
+        <div class="grid cards-2">
+          <div class="card">
+            <div class="card-body">
+              <h3>Profile</h3>
+              <p class="card-meta">Member ID: SW-40218</p>
+              <p>Home branch: Stackwell Main<br>Card type: Standard resident membership</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3>Preferences</h3>
+              <p class="card-meta">Prototype settings — not functional</p>
+              <p>Email reminders: On<br>Preferred pickup: Front desk</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h4>Stackwell Library</h4>
+          <p style="max-width: 32ch; color: var(--text-on-dark-muted);">A community library system for readers, researchers, and anyone who needs a quiet table for an afternoon.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="catalog.html">Catalog</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+        <div>
+          <h4>Account</h4>
+          <a href="portal.html">Member portal</a>
+          <a href="contact.html">Contact us</a>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <a href="about.html">Hours & location</a>
+          <a href="contact.html">Ask a librarian</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Stackwell Library. A static prototype built for ICT726 Assignment 3.</span>
+        <span>All account data on this page is fictional sample data.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

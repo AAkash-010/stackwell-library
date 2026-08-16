@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackwell Library — Your Neighbourhood Library System</title>
+  <meta name="description" content="Stackwell Library is a community library system: browse the catalog, visit the reading rooms, and manage your membership online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap nav-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">SL</span>
+        <span>
+          Stackwell Library
+          <span class="brand-tag">Est. community library system</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="about.html">About</a>
+        <a href="portal.html">Member Portal</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="portal.html">Sign in</a>
+      </div>
+
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-panel">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav id="mobile-panel" class="mobile-panel" aria-label="Mobile">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="about.html">About</a>
+      <a href="portal.html">Member Portal</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Open today · 9am–8pm</p>
+          <h1 id="hero-heading">A library card is still the best-value membership in town.</h1>
+          <p class="lede">
+            Stackwell Library is a community library system connecting readers with books, research
+            tools, and quiet space to think. Search the shared catalog, reserve a seat in the reading
+            room, or renew a loan — all from your browser, day or night.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="catalog.html">Browse the catalog</a>
+            <a class="btn btn-ghost" href="contact.html">Ask a librarian</a>
+          </div>
+        </div>
+
+        <div class="drawer" aria-hidden="true">
+          <div class="drawer-label">Fiction — Recently Returned</div>
+          <div class="drawer-card">
+            <span>Klay, M. — <em>The Long Ferry</em></span>
+            <span class="call-number">FIC KLA</span>
+          </div>
+          <div class="drawer-card">
+            <span>Odusanya, T. — <em>Salt Houses</em></span>
+            <span class="call-number">FIC ODU</span>
+          </div>
+          <div class="drawer-card">
+            <span>Reyes, P. — <em>Field Notes on Rain</em></span>
+            <span class="call-number">FIC REY</span>
+          </div>
+          <div class="drawer-card">
+            <span>Voss, E. — <em>The Cartographer's Wife</em></span>
+            <span class="call-number">FIC VOS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED COLLECTIONS -->
+    <section aria-labelledby="collections-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Start here</p>
+          <h2 id="collections-heading">Featured collections</h2>
+          <p class="lede">A few shelves worth wandering through this month, picked by the reading-room staff.</p>
+        </div>
+
+        <div class="grid cards-3">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=60"
+                 alt="Tall wooden library shelving filled with hardcover books">
+            <div class="card-body">
+              <h3>Local & Regional History</h3>
+              <p class="card-meta">142 titles · Level 2, West Wing</p>
+              <p>Maps, oral histories, and out-of-print pamphlets on Stackwell and its surrounding towns.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=60"
+                 alt="Open book with pages fanned out on a wooden desk">
+            <div class="card-body">
+              <h3>New & Notable Fiction</h3>
+              <p class="card-meta">86 titles · Ground Floor</p>
+              <p>This season's releases alongside staff-favourite backlist novels, restocked weekly.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=600&q=60"
+                 alt="Stack of assorted hardcover books on a table">
+            <div class="card-body">
+              <h3>Research & Reference</h3>
+              <p class="card-meta">210 titles · Quiet Study Room</p>
+              <p>Encyclopaedias, journals, and databases for students and independent researchers.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK INFO -->
+    <section aria-labelledby="info-heading" style="background: var(--parchment-card); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Good to know</p>
+          <h2 id="info-heading">Visiting Stackwell</h2>
+        </div>
+        <div class="grid cards-3">
+          <div>
+            <h3>Hours</h3>
+            <p>Mon–Fri 9am–8pm<br>Sat 10am–5pm<br>Sun 12pm–5pm</p>
+          </div>
+          <div>
+            <h3>Membership</h3>
+            <p>Free for residents. Visiting members welcome with photo ID — apply through the <a href="portal.html">member portal</a>.</p>
+          </div>
+          <div>
+            <h3>Study spaces</h3>
+            <p>Quiet Study Room and four bookable group rooms. See the <a href="about.html">about page</a> for floor plans.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section aria-labelledby="quote-heading">
+      <div class="wrap" style="max-width: 760px;">
+        <h2 id="quote-heading" class="visually-hidden">Reader testimonial</h2>
+        <blockquote style="font-family: var(--font-display); font-size: 1.5rem; color: var(--ink); margin: 0; border-left: 4px solid var(--brass); padding-left: 1.5rem;">
+          "I moved to Stackwell not knowing a soul. The reading room was the first place that felt like mine."
+        </blockquote>
+        <p class="card-meta" style="margin-top: 1rem;">— Priya N., member since 2021</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h4>Stackwell Library</h4>
+          <p style="max-width: 32ch; color: var(--text-on-dark-muted);">A community library system for readers, researchers, and anyone who needs a quiet table for an afternoon.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="catalog.html">Catalog</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+        <div>
+          <h4>Account</h4>
+          <a href="portal.html">Member portal</a>
+          <a href="contact.html">Contact us</a>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <a href="about.html">Hours & location</a>
+          <a href="contact.html">Ask a librarian</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Stackwell Library. A static prototype built for ICT726 Assignment 3.</span>
+        <span>All book records are fictional sample data.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

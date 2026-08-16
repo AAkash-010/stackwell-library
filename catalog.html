@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog — Stackwell Library</title>
+  <meta name="description" content="Browse a sample of the Stackwell Library catalog by genre. Design prototype with sample data — no live database.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap nav-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">SL</span>
+        <span>Stackwell Library<span class="brand-tag">Est. community library system</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="catalog.html" aria-current="page">Catalog</a>
+        <a href="about.html">About</a>
+        <a href="portal.html">Member Portal</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta"><a href="portal.html">Sign in</a></div>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-panel">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav id="mobile-panel" class="mobile-panel" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="catalog.html" aria-current="page">Catalog</a>
+      <a href="about.html">About</a>
+      <a href="portal.html">Member Portal</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="catalog-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Design prototype — sample data</p>
+          <h1 id="catalog-heading">Browse the catalog</h1>
+          <p class="lede">A snapshot of what's on the shelves this week. This static prototype uses hardcoded sample records; a live system would query a real database.</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter by genre" style="display:flex; flex-wrap:wrap; gap:0.6rem; margin-bottom:2rem;">
+          <button type="button" class="btn btn-outline-dark" data-filter="all" aria-pressed="true">All genres</button>
+          <button type="button" class="btn btn-outline-dark" data-filter="fiction" aria-pressed="false">Fiction</button>
+          <button type="button" class="btn btn-outline-dark" data-filter="nonfiction" aria-pressed="false">Non-fiction</button>
+          <button type="button" class="btn btn-outline-dark" data-filter="scifi" aria-pressed="false">Sci-Fi & Fantasy</button>
+          <button type="button" class="btn btn-outline-dark" data-filter="kids" aria-pressed="false">Children's</button>
+        </div>
+
+        <div class="grid cards-3">
+
+          <article class="card" data-genre="fiction">
+            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=500&q=60" alt="Closed hardcover novel with a plain cloth cover">
+            <div class="card-body">
+              <span class="tag">Available</span>
+              <h3>The Long Ferry</h3>
+              <p class="card-meta">Mira Klay · Fiction · FIC KLA</p>
+              <p>A slow-burning family drama set aboard a cross-strait ferry line.</p>
+            </div>
+          </article>
+
+          <article class="card" data-genre="nonfiction">
+            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=500&q=60" alt="Open reference book with dense text on both pages">
+            <div class="card-body">
+              <span class="tag tag-out">Checked out</span>
+              <h3>A History of Coastal Trade</h3>
+              <p class="card-meta">D. Okonkwo-Reid · Non-fiction · 380.1 OKO</p>
+              <p>An economic history of Indo-Pacific shipping routes, 1750–1950.</p>
+            </div>
+          </article>
+
+          <article class="card" data-genre="scifi">
+            <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=500&q=60" alt="Stack of paperback books with worn spines">
+            <div class="card-body">
+              <span class="tag">Available</span>
+              <h3>Salt Houses</h3>
+              <p class="card-meta">Tomi Odusanya · Sci-Fi & Fantasy · SF ODU</p>
+              <p>A generation ship rebuilds its culture around a single surviving library.</p>
+            </div>
+          </article>
+
+          <article class="card" data-genre="kids">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=500&q=60" alt="Colourful illustrated children's picture book lying open">
+            <div class="card-body">
+              <span class="tag">Available</span>
+              <h3>Pip and the Paper Boat</h3>
+              <p class="card-meta">Astrid Lund · Children's · JP LUN</p>
+              <p>A picture book about a paper boat that carries messages between neighbours.</p>
+            </div>
+          </article>
+
+          <article class="card" data-genre="nonfiction">
+            <img src="https://images.unsplash.com/photo-1509266272358-7701da638078?auto=format&fit=crop&w=500&q=60" alt="Neatly arranged row of hardcover reference books">
+            <div class="card-body">
+              <span class="tag">Available</span>
+              <h3>Field Notes on Rain</h3>
+              <p class="card-meta">Priya Reyes · Non-fiction · 551.5 REY</p>
+              <p>A working meteorologist's essays on weather, memory, and small towns.</p>
+            </div>
+          </article>
+
+          <article class="card" data-genre="fiction">
+            <img src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?auto=format&fit=crop&w=500&q=60" alt="Vintage hardcover book with gold-embossed spine detail">
+            <div class="card-body">
+              <span class="tag tag-out">Checked out</span>
+              <h3>The Cartographer's Wife</h3>
+              <p class="card-meta">Elin Voss · Fiction · FIC VOS</p>
+              <p>A mapmaker's widow uncovers a border dispute hidden in her husband's charts.</p>
+            </div>
+          </article>
+
+          <article class="card" data-genre="scifi">
+            <img src="https://images.unsplash.com/photo-1495640388908-05fa85288e61?auto=format&fit=crop&w=500&q=60" alt="Fantasy novel with an ornate embossed cover design">
+            <div class="card-body">
+              <span class="tag">Available</span>
+              <h3>The Glass Orchard</h3>
+              <p class="card-meta">Hana Novak · Sci-Fi & Fantasy · SF NOV</p>
+              <p>An orchard that grows glass fruit becomes the centre of a quiet border war.</p>
+            </div>
+          </article>
+
+          <article class="card" data-genre="kids">
+            <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=500&q=60" alt="Stack of bright children's books on a rug">
+            <div class="card-body">
+              <span class="tag">Available</span>
+              <h3>The Very Patient Snail</h3>
+              <p class="card-meta">Astrid Lund · Children's · JP LUN2</p>
+              <p>A gentle counting book following one snail's slow trip across a garden.</p>
+            </div>
+          </article>
+
+          <article class="card" data-genre="fiction">
+            <img src="https://images.unsplash.com/photo-1512045482786-53fac1b03d7e?auto=format&fit=crop&w=500&q=60" alt="Row of colourful paperback novels on a shelf">
+            <div class="card-body">
+              <span class="tag">Available</span>
+              <h3>Nine Winters in Kigoma</h3>
+              <p class="card-meta">Grace Mwangi · Fiction · FIC MWA</p>
+              <p>A nurse's decade-spanning letters home from a lakeside clinic.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h4>Stackwell Library</h4>
+          <p style="max-width: 32ch; color: var(--text-on-dark-muted);">A community library system for readers, researchers, and anyone who needs a quiet table for an afternoon.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="catalog.html">Catalog</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+        <div>
+          <h4>Account</h4>
+          <a href="portal.html">Member portal</a>
+          <a href="contact.html">Contact us</a>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <a href="about.html">Hours & location</a>
+          <a href="contact.html">Ask a librarian</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Stackwell Library. A static prototype built for ICT726 Assignment 3.</span>
+        <span>All book records are fictional sample data.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
